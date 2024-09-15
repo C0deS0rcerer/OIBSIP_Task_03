@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lvl 1: task 3</title>
+    <link rel="stylesheet" href="temp.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <div class="container">
+        <h2>Temperature converter</h2>
+        <form id="converter">
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="temperature">Degrees</label>
+                    <input type="number" id="temperature" placeholder="Enter temperature">
+                </div>
+                <div class="input-group">
+                    <label for="unit">Type</label>
+                    <select id="unit">
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Celsius">Celsius</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="result">Result</label>
+                <input type="text" id="result" placeholder="Result" readonly>
+            </div>
+            <button type="button" onclick="convertTemperature()">Convert</button>
+        </form>
+    </div>
+
+    <script src="temp.js"></script>
+</body>
+</html>
